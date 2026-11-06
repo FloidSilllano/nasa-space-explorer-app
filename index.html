@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NASA Space Explorer</title>
+    <title>NASA Space Explorer App</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>NASA Space Explorer</h1>
+        <h1>NASA Space Explorer App</h1>
         <p>Explore the cosmos through NASA's Astronomy Picture of the Day</p>
     </header>
 
@@ -25,16 +25,22 @@
             </div>
         </section>
 
-        <div id="loading" class="hidden">Loading space data...</div>
-        
-        <section id="gallery" class="gallery-grid"></section>
+        <div id="loading" class="hidden">
+            <p>Loading space exploration data...</p>
+        </div>
+
+        <section id="gallery" class="gallery-grid">
+            <!-- Dynamic gallery cards will load here -->
+        </section>
     </main>
 
-    <!-- Modal View -->
+    <!-- Modal with 'hidden' class added by default -->
     <div id="modal" class="modal hidden">
         <div class="modal-content">
             <span id="close-modal" class="close-btn">&times;</span>
-            <div id="modal-body"></div>
+            <div id="modal-body">
+                <!-- Detailed content injected via JS -->
+            </div>
         </div>
     </div>
 
