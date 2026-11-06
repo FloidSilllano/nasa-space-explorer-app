@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NASA Space Explorer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>NASA Space Explorer</h1>
+        <p>Explore the cosmos through NASA's Astronomy Picture of the Day</p>
+    </header>
+
+    <main>
+        <section class="controls">
+            <div class="date-picker-container">
+                <label for="start-date">Start Date:</label>
+                <input type="date" id="start-date">
+                
+                <label for="end-date">End Date:</label>
+                <input type="date" id="end-date">
+                
+                <button id="fetch-btn">Get Space Images</button>
+            </div>
+        </section>
+
+        <div id="loading" class="hidden">Loading space data...</div>
+        
+        <section id="gallery" class="gallery-grid"></section>
+    </main>
+
+    <!-- Modal View -->
+    <div id="modal" class="modal hidden">
+        <div class="modal-content">
+            <span id="close-modal" class="close-btn">&times;</span>
+            <div id="modal-body"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
